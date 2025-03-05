@@ -9,7 +9,7 @@ public class Main {
 
         int number = target.nextInt(10);
 
-        System.out.print("Enter the number between 1 and 10: ");
+        System.out.print("Enter the number between 0 and 10: ");
         int user = input.nextInt();
 
         int counter = 0;
