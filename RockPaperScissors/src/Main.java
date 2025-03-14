@@ -27,57 +27,57 @@ public class Main {
         Random computer = new Random();
         int computerChoice = computer.nextInt(3);
 
-        if(userChoice.toLowerCase().equals("rock")){
-            switch(computerChoice){
-                case 0:
-                    System.out.println("DRAW!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 1:
-                    System.out.println("Computer wins!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 2:
-                    System.out.println("You win!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
+            if (userChoice.toLowerCase().equals("rock")) {
+                switch (computerChoice) {
+                    case 0:
+                        System.out.println("DRAW!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 1:
+                        System.out.println("Computer wins!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 2:
+                        System.out.println("You win!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                }
+            } else if (userChoice.toLowerCase().equals("paper")) {
+                switch (computerChoice) {
+                    case 0:
+                        System.out.println("You win!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 1:
+                        System.out.println("DRAW!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 2:
+                        System.out.println("Computer wins!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                }
+            } else {
+                switch (computerChoice) {
+                    case 0:
+                        System.out.println("Computer wins!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 1:
+                        System.out.println("You win!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                    case 2:
+                        System.out.println("DRAW!");
+                        System.out.println("Computer choice was " + choices[computerChoice]);
+                        break;
+                }
             }
+            System.out.print("Do you want to play again? (yes/no): ");
+            String demand = scanner.nextLine();
+
+            willing = demand.toLowerCase();
         }
-        else if (userChoice.toLowerCase().equals("paper")){
-            switch(computerChoice){
-                case 0:
-                    System.out.println("You win!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 1:
-                    System.out.println("DRAW!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 2:
-                    System.out.println("Computer wins!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-            }
-        }
-        else{
-            switch(computerChoice){
-                case 0:
-                    System.out.println("Computer wins!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 1:
-                    System.out.println("You win!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-                case 2:
-                    System.out.println("DRAW!");
-                    System.out.println("Computer choice was " + choices[computerChoice]);
-                    break;
-            }
-        }
-        System.out.println("\nThank you for playing.I hope you enjoyed this.");
-        System.out.print("Press enter q to quit: ");
-        char quit = scanner.nextLine().charAt(0);
         scanner.close();
         System.out.println("You left the game!");
         System.out.println("\nThank you for playing.I hope you enjoyed this.");
