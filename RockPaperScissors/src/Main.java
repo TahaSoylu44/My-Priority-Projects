@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String[] choices = {"rock","paper","scissors"};
+        String[] choices = {"rock", "paper", "scissors"};
 
         boolean isUser = true;
         String userChoice;
@@ -27,8 +27,8 @@ public class Main {
                 }
             } while (isUser);
 
-        Random computer = new Random();
-        int computerChoice = computer.nextInt(3);
+            Random computer = new Random();
+            int computerChoice = computer.nextInt(3);
 
             if (userChoice.toLowerCase().equals("rock")) {
                 switch (computerChoice) {
