@@ -79,5 +79,7 @@ public class Main {
         System.out.print("Press enter q to quit: ");
         char quit = scanner.nextLine().charAt(0);
         scanner.close();
+        System.out.println("You left the game!");
+        System.out.println("\nThank you for playing.I hope you enjoyed this.");
     }
 }
