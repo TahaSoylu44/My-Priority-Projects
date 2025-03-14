@@ -13,16 +13,19 @@ public class Main {
         System.out.println("Welcome to ROCK PAPER SCISSORS!");
         System.out.println("*******************************");
 
-        do{
-            System.out.print("What is your choice (rock,paper,scissors) ?: ");
-            userChoice = scanner.nextLine();
-            for (int i = 0;i < choices.length;i++){
-                if(userChoice.toLowerCase().equals(choices[i])){
-                    isUser = false;
-                    break;
+        String willing = "yes";
+
+        while (willing.equals("yes")) {
+            do {
+                System.out.print("What is your choice (rock,paper,scissors) ?: ");
+                userChoice = scanner.nextLine();
+                for (int i = 0; i < choices.length; i++) {
+                    if (userChoice.toLowerCase().equals(choices[i])) {
+                        isUser = false;
+                        break;
+                    }
                 }
-            }
-        }while(isUser);
+            } while (isUser);
 
         Random computer = new Random();
         int computerChoice = computer.nextInt(3);
